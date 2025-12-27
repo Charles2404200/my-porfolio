@@ -531,5 +531,78 @@ screenshots: [
   "/images/ems-4.png"
 ],
 },
+{
+  slug: "minirarpp",
+  title: "MiniRAR++",
+  tagline:
+    "A modern cross-platform desktop archiving tool built with Tauri v2 and Rust, featuring a job-based architecture, drag-and-drop UX, and real-time compression progress.",
+
+  year: "2025",
+  role: "Full-stack Desktop Developer (Rust + Tauri)",
+
+  stack: [
+    "Tauri v2",
+    "Rust",
+    "TypeScript",
+    "React",
+    "Desktop Application Architecture",
+    "Asynchronous Job Processing",
+    "Event-driven Communication",
+  ],
+
+  repoUrl: "https://github.com/Charles2404200/minirarpp",
+  liveUrl: "",
+
+  overview: [
+    "MiniRAR++ is a lightweight, cross-platform desktop archive utility designed as a modern alternative to traditional tools such as WinRAR and 7-Zip.",
+    "The application is built using Tauri v2 with a Rust backend for performance-critical tasks and a React-based frontend for a responsive desktop user experience.",
+    "The project emphasizes clean separation between UI, job orchestration, and compression logic, enabling scalability and maintainability beyond a simple archiving tool."
+  ],
+
+  features: [
+    "File and folder compression with drag-and-drop support",
+    "Integrated file picker using native OS dialogs",
+    "Job-based compression system allowing multiple independent archive tasks",
+    "Real-time progress tracking with event-based updates from the Rust backend",
+    "Desktop-optimized UI inspired by professional archiving tools",
+    "Cancelable compression jobs with responsive UI feedback",
+    "Automatic path handling and validation for input and output targets"
+  ],
+
+  architecture: [
+    {
+      title: "Frontend Layer",
+      desc:
+        "A React-based desktop UI structured around reusable components and feature modules, including drag-and-drop inputs, job controls, and progress visualization."
+    },
+    {
+      title: "Service Layer",
+      desc:
+        "TypeScript service modules abstract Tauri invoke calls, providing a clean interface between the UI and backend compression commands."
+    },
+    {
+      title: "Job Orchestration Layer",
+      desc:
+        "A job-centric design where each compression task is assigned a unique identifier, enabling concurrent operations, cancellation, and future queue expansion."
+    },
+    {
+      title: "Backend Core",
+      desc:
+        "A Rust-based core responsible for file traversal, archive creation, and progress emission via Tauri’s event system for real-time UI updates."
+    }
+  ],
+
+  highlights: [
+    "Designed with a job-based architecture instead of a single blocking compression workflow.",
+    "Strong separation of concerns between UI, services, and backend logic.",
+    "Use of Rust for performance-sensitive operations such as file traversal and compression.",
+    "Event-driven communication between Rust and the frontend for real-time progress updates.",
+    "Modern desktop UX including drag-and-drop, native dialogs, and non-blocking UI behavior.",
+    "Built on Tauri v2, leveraging a small binary footprint and native OS integration."
+  ],
+
+  screenshots: [
+  ],
+}
 
 ];
