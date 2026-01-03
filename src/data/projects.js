@@ -82,7 +82,7 @@ export const projects = [
   ],
 
   repoUrl: "https://github.com/Charles2404200/Render",
-  liveUrl: "",
+  liveUrl: "https://render-production-f168.up.railway.app",
 
   overview: [
     "Render is a frontend-focused web application that simulates a stock and cryptocurrency market dashboard.",
