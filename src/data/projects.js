@@ -532,74 +532,6 @@ screenshots: [
 ],
 },
 {
-  slug: "weather-app-fullstack",
-  title: "Weather App — Full-stack Weather Dashboard",
-  tagline:
-    "A full-stack weather application with a Next.js frontend and FastAPI backend, featuring real-time forecasts, caching, and Dockerized deployment.",
-
-  year: "2024",
-  role: "Full-stack Developer",
-
-  stack: [
-    "Next.js 14",
-    "React",
-    "TypeScript",
-    "CSS3",
-    "FastAPI",
-    "Python",
-    "HTTPX",
-    "Docker & Docker Compose",
-    "Open-Meteo API",
-  ],
-
-  repoUrl: "https://github.com/Charles2404200/weather-app",
-  liveUrl: "",
-
-  overview: [
-    "Weather App is a modern full-stack weather dashboard that serves current conditions and 7-day forecasts for cities around the world.",
-    "The frontend is built with Next.js and TypeScript, while a FastAPI backend exposes REST endpoints that aggregate and cache weather data from Open-Meteo.",
-    "The project demonstrates a clean separation between UI, API, and services, with Docker support for running the whole stack locally or in the cloud.",
-  ],
-
-  features: [
-    "Search weather by city name with autocomplete for popular cities",
-    "Current weather view with temperature, humidity, wind speed, and status",
-    "7-day forecast with high/low temperatures and detailed metrics",
-    "Backend caching layer to reduce calls to the external weather API",
-    "Async FastAPI endpoints with automatic interactive API documentation",
-    "Docker Compose setup to run frontend and backend together",
-  ],
-
-  architecture: [
-    {
-      title: "Frontend",
-      desc:
-        "Next.js 14 application using the App Router, React 18, TypeScript, and responsive CSS for the search experience, current weather card, and forecast list.",
-    },
-    {
-      title: "Backend",
-      desc:
-        "FastAPI service exposing REST endpoints for current weather, forecast, and full weather data, implemented with async HTTP calls, Pydantic schemas, and in-memory caching.",
-    },
-    {
-      title: "Infrastructure",
-      desc:
-        "Docker and Docker Compose configuration to run frontend and backend services together, with environment-based configuration for local and production deployments.",
-    },
-  ],
-
-  highlights: [
-    "End-to-end full-stack implementation from React/Next.js UI down to Python/FastAPI API.",
-    "Practical use of async I/O, caching, and third-party HTTP APIs for performance.",
-    "Clean project structure with separate frontend and backend folders plus docs and deployment guides.",
-    "Production-minded deployment options including Docker images and Railway deployment instructions.",
-  ],
-
-  screenshots: [
-    // "/images/weather-1.png"
-  ],
-},
-{
   slug: "minirarpp",
   title: "MiniRAR++",
   tagline:
@@ -671,6 +603,62 @@ screenshots: [
 
   screenshots: [
   ],
+},
+{
+  slug: "weather-app",
+  title: "Weather App — Real-time Forecast & Weather Dashboard",
+  tagline: "A responsive web application providing live weather forecast and conditions, built with React and external weather APIs.",
+  year: "2025",
+  role: "Frontend / Full-stack Developer",
+  stack: [
+    "React",
+    "Vite",
+    "JavaScript",
+    "Tailwind CSS",
+    "REST API",
+    "Fetch / Axios",
+  ],
+
+  repoUrl: "https://github.com/Charles2404200/weather-app",
+  liveUrl: "",
+
+  overview: [
+    "Weather App is a web application that shows real-time weather information and forecast for user-selected locations.",
+    "It fetches data from public weather APIs and displays current weather, hourly and daily forecast, and other meteorological details.",
+  ],
+
+  features: [
+    "Search location by city name or coordinates",
+    "Display current weather, temperature, humidity, wind speed, UV index, sunrise/sunset times",
+    "Show hourly and 7-day forecast with responsive UI",
+    "Support dark and light mode (based on user preference or system settings)",
+    "Responsive design for mobile and desktop",
+    "Graceful error handling (invalid location, API errors, network issues)"
+  ],
+
+  architecture: [
+    {
+      title: "Frontend",
+      desc: "React (Vite) for fast SPA rendering, styled with Tailwind CSS for responsive design."
+    },
+    {
+      title: "Data Fetching",
+      desc: "Uses Fetch (or Axios) to call public weather APIs; handles asynchronous data loading and error states."
+    }
+  ],
+
+  highlights: [
+    "Real-time weather data with live API calls — not static or mock data.",
+    "Clean, responsive and mobile-first UI design.",
+    "Light and dark theme support for better UX.",
+    "Good error and loading state handling to provide stable user experience.",
+  ],
+
+  screenshots: [
+    // e.g. "/images/projects/weather-app/weather-1.png"
+  ],
 }
+
+
 
 ];
